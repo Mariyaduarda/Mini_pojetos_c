@@ -20,12 +20,18 @@ int main(int argc, char** argv) {
 
     int soma = 0;
     //imrpimir 1000 e verificar se sao multiplos 
-    
     for(int i = 0; i < 1000; i++){
         if(i%3 == 0 || i%5 == 0){
             soma += i;
+            printf("%d \n", i);
         }
     }
+    
+    printf("========================================");
+    printf("A soma dos multiplos de 3 e 5 são %d", soma );
+    printf("========================================");
+
+    
     return (EXIT_SUCCESS);
 }
 
